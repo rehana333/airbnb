@@ -2,6 +2,7 @@ import React from "react";
 export default function Card(props) {
     return (
         <div className="card">
+        {props.soldOut && <div className="card--badge">Sold Out</div>}
         <img
             src={props.img}
             alt="card"
